@@ -125,11 +125,24 @@ while(score < 7) {
 ////////// PROBLEM 9 //////////
 /*
   Create a variable called 'changeMyMind' and set it equal to true. 
-  Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
+  Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, 
+  change the status to true.
 
 */
 
-//CODE HERE
+changeMyMind = true
+
+if(changeMyMind === true) {
+  console.log(changeMyMind);
+  changeMyMind = false;
+  console.log(`changeMyMind has been changed to ${changeMyMind}.`);
+} else if(changeMyMind !== true) {
+  console.log(changeMyMind)
+  changeMyMind = true;
+  console.log(`changeMyMind has been changed to ${changeMyMind}.`);
+}
+
+
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
